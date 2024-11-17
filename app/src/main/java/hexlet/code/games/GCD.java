@@ -22,8 +22,9 @@ public class GCD {
             int x = Utils.getRandomNumber(MIN, MAX);
             int y = Utils.getRandomNumber(MIN, MAX);
             String question = x + " " + y;
+            String answer = String.valueOf(calculateGCD(x, y));
             gameData[i][0] = question;
-            gameData[i][1] = String.valueOf(calculateGCD(x, y));
+            gameData[i][1] = answer;
         }
         return gameData;
     }
