@@ -8,7 +8,7 @@ public class Even {
     private static final int MIN = 0;
     private static final int MAX = 100;
 
-    private static String[][] getQuestionAnswer() {
+    private static String[][] generateData() {
         String[][] gameData = new String[Engine.NUMBER_OF_ROUNDS][2];
         for (int i = 0; i < Engine.NUMBER_OF_ROUNDS; i++) {
             int question = Utils.getRandomNumber(MIN, MAX);
@@ -24,6 +24,6 @@ public class Even {
     }
 
     public static void runGame() {
-        Engine.makeGame(GAME_DESCRIPTION, getQuestionAnswer());
+        Engine.makeGame(GAME_DESCRIPTION, generateData());
     }
 }
